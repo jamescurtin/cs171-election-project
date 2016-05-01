@@ -1,0 +1,389 @@
+<!--	
+
+TEAM NAME:		Data, Inc.
+
+TEAM MEMBERS:	James Curtin
+ 				Anna Papp
+ 				Wilson Qin
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data, Inc. Final Project</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<!-- top banner -->
+<div id="header-wrapper" class="container-fluid" style="text-align:center;">
+
+    <nav class="row navbar navbar-custom" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div id="navbar-brand logo" style="padding-left: 15px;">
+                    <a href="index.html"><img src="images/data_inc.png" height="130px"></a>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="menu" class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="active"><a href="index.html" title="">Home</a></li>
+                    <li><a href="county_level.html" title="">Data Explorer</a></li>
+                    <li><a href="polls_trends.html" title="">Opinion Tracker</a></li>
+                    <li><a href="sources.html" title="">Sources</a></li>
+                    <li><a href="aboutus.html" title="">About Us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div style="clear:both;"></div>
+
+    <!-- Intro Header -->
+    <header class="row" id="banner">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="title">
+                <h2>The 2016 Presidential Elections</h2>
+                <span class="byline">More complex relationships in elections data.</span>
+            </div>
+            <!-- these should not take user to different page but rather to the appropriate visualization -->
+            <a href="#introduction" class="button">Introduction</a>
+            <a href="#countyLevel" class="button">Data Visualizations</a>
+            <!-- <a href="#pollsTrends" class="button">Polls vs. Google Trends</a> -->
+            <!-- <a href="#" class="button">What's Next?</a> -->
+            <div style="clear:both;"></div>
+            <a href="#introduction" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down fa-3x animated"></i>
+            </a>
+        </div>
+    </header>
+</div>
+<!-- end banner -->
+
+<!-- begin body -->
+<div class="container-fluid">
+
+
+    <div class="row" style="" id="introduction">
+        <h2 align="center">Introduction to Our Project</h2>
+        <div style="clear:both;">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- VIDEO HERE -->
+                <h3 align="center" style="padding-bottom: 10px">Explanatory Video</h3>
+                <div align="center">
+                    <iframe width="632" height="356" src="https://www.youtube.com/embed/Eowv_XKaIxE" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h3 align="center">Motivations and Goals</h3>
+                <br><br>
+                <p class="intro">
+                We present two data tools to visually explore and analyze the <b>2016 presidential election</b> landscape. The media tends to characterize the primary elections as horseraces for the Republican and Democrat parties, as their respective candidates jockey for the lead in delegate totals across their respective primary contests in individual states. However our visualizations dive deeper to explore public opinion through popular vote totals, poll results, internet search trends, and demographics by geography.
+                    <br><br>
+                    While casual visual inspection is by no means a rigorous analysis tool, our visualizations empower you to use an initial visual approach to finding meaning in voting patterns before a more focused and rigorous analysis with statistical tools.
+                    <br><br>
+                    We hope you enjoy our project!
+                </p>
+                <div align="center">
+                    <img class="miniPhotos" style="max-width:50px;" src="images/anna.png">
+                    <img class="miniPhotos" style="max-width:50px;" src="images/james.png">
+                    <img class="miniPhotos" style="max-width:50px;" src="images/wilson.png">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" align="center" style=""><a href="#countyLevel"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></a></div>
+    </div>
+    <div class="row intro vis1_intro" id="countyLevel">
+        <h2 align="center">Data Explore for States and Counties</h2>
+        <br>
+
+        <div class="col-md-6" align="center">
+        <img src="images/vis1_picture.jpg" width="560px">
+        </div>
+
+
+        <div class="col-md-6">
+        <!-- explanation of vis1 here -->
+
+            <p class="intro">
+            The Data Explorer for States and Counties allows the exploration of state and county level primary results. You can even visually sift and compare voting patterns to census demographic data on a county by county basis.
+            </p>
+
+            <div align="center">
+                <img class="miniPhotos" src="images/democrat.jpg">
+                <img class="miniPhotos" src="images/republican.jpg">
+            </div>
+
+
+            <div align="center">
+            <a href="county_level.html" class="button3">Enter Data Explore for States and Counties</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row intro vis2_intro" id="pollsTrends">
+        <h2 align="center">The Public Opinion Tracker</h2>
+        <br>
+
+        <div class="col-md-6" align="center">
+
+        <img src="images/vis2_picture.jpg" width="560px">
+
+
+        </div>
+
+
+        <div class="col-md-6">
+        <!-- explanation of vis2 here -->
+            <p class="intro">
+                The Public Opinion Tracker allows you to explore the political environment of the 2016 election season through Polls, Trends and Events. Relate how opinion polling and the nation’s attention changes through time, and visually explore the timing between candidates’ swings in the polls and internet searches.
+
+            </p>
+
+            <div align="center">
+                <img class="miniPhotos" src="images/hillary_button.jpg">
+                <img class="miniPhotos" src="images/bernie_button.jpg">
+                <img class="miniPhotos" src="images/trump_button.jpg">
+                <img class="miniPhotos" src="images/cruz_button.jpg">
+                <img class="miniPhotos" src="images/kasich_button.jpg">
+            </div>
+
+            <div align="center">
+            <a href="polls_trends.html" class="button3">Enter Public Opinion Tracker</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--&lt;!&ndash; add general explanation stuff here &ndash;&gt;
+    <p class="explanation_heading">
+        text text text
+    </p>
+
+    <div class="background_break" id="countyLevelVoting">
+        <h1 align="center">
+            <br>County Level Voting Patterns</h1>
+    </div>
+
+    &lt;!&ndash; FIRST VISUALIZATION - CHOROPLETH &ndash;&gt;
+    <div class="row vis1">
+
+        &lt;!&ndash; add a few sentences about choropleth here &ndash;&gt;
+        <p class="explanation_heading">
+            text text text
+        </p>
+
+        &lt;!&ndash; Column 1 &ndash;&gt;
+        <div class="col-md-6">
+            <div>
+                <h1 align="center">Primary Election Winners</h1>
+                <div align="center" style="padding-top: 10px">
+                    <form action="">
+                        Select a party:
+                        <input type="radio" name="party" value="Republican" checked/> Republican
+                        <input type="radio" name="party" value="Democrat"/> Democrat<br>
+                    </form>
+                    <div>
+                        <a href="#countyLevelVoting" class="button" onclick="clicked()">Reset Map</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &lt;!&ndash; Column 2 &ndash;&gt;
+        <div class="col-md-6">
+            <h1 align="center">Demographic Data</h1>
+            <h4 style="padding-top: 10px">Select the demographic features you'd like to display:</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    &lt;!&ndash; populate census/demographic options dynamically in js &ndash;&gt;
+                    <select id="selectDemographic" class="form-control"></select>
+                </div>
+            </div>
+&lt;!&ndash;                 <form action="">
+                    <input type="radio" name="demographics" value="" checked/> 
+                    <input type="radio" name="demographics" value=""/> <br>
+                </form> &ndash;&gt;
+            <h3 align="center" style="font-weight: bold; padding-top: 10px" id="stateText"></h3>
+        </div>
+    </div>
+    <div class="row">
+        &lt;!&ndash; Column 1 &ndash;&gt;
+        <div class="col-md-6">
+            &lt;!&ndash; Visualization placeholders &ndash;&gt;
+            <div id="choropleth1"></div>
+        </div>
+        &lt;!&ndash; Column 2 &ndash;&gt;
+        <div class="col-md-6">
+            <div id="choropleth2"></div>
+        </div>
+    </div>-->
+
+<!--
+    <br>
+
+    <div class="background_break" id="pollsTrends">
+        <h1 align="center">
+            <br>National Polls vs. Google Trends</h1>
+    </div>
+
+    &lt;!&ndash; SECOND VISUALIZATION - POLLS / TRENDS &ndash;&gt;
+    <div class="row">
+        <br>
+        <p class="explanation_heading">
+            How does the internet impact elections? Are <b>Google Searches</b> related to a candidate's performance in <b>national polls</b>? Why are searches for politicians' wives so popular?
+            These are some of the questions explored in the following section.
+        </p>
+        &lt;!&ndash; Row 1 - explanations &ndash;&gt;
+        <div class="row">
+            &lt;!&ndash; Polls + Trends explanations &ndash;&gt;
+
+            <div class="col-md-3">
+            <h3 align="center">Polls, Searches, and Events</h3>
+            <p class="explore_explanation">
+            The top graph shows how candidates performed over time in national polls, while the lower graph shows the volume of Google Search trends of specific phrases related to candidates.
+            Add <b>events</b> in the center to display important milestones during the elections.
+            </p>
+            </div>
+
+            <div class="col-md-6">
+                <form action="" method="get">
+                    <div class="eventButtons row">
+                        <div class="col-md-4">
+                            <input type="checkbox" id="show_events" class="invisible">
+                            <br>
+                            <a class="button2" id="show" onclick="changeEventsCheckbox()">Show Events</a>
+                        </div>
+                        <div class="col-md-4">
+                            <br>
+                            <a class="button2" onclick="removeEvents()">Remove Events</a>
+                        </div>
+                        <div class="col-md-4">
+                            <br>
+                            <a href="#pollsTrends" onclick="resetVisualization2()" class="button2">Reset Graphs</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            &lt;!&ndash; Select Candidate + search terms explanation&ndash;&gt;
+            <div class="col-md-3">
+            <h3 align="center">Select Candidates and Search Terms</h3>
+            <p class="explore_explanation">Explore how the five <b>candidates</b> performed in national polls over time by clicking on their image.
+            Then, select some <b>search terms</b> to show on the lower graph. What interesting trends can you find? Is Ted Cruz really the <a href="http://www.gq.com/story/ted-cruz-loves-soup-zodiac-killer-maybe">Zodiac Killer?</a></p>
+            </div>
+        </div>
+
+        &lt;!&ndash; Row 2 - visualizations &ndash;&gt;
+        <div class="row">
+
+            &lt;!&ndash; Column 1 - visualizations &ndash;&gt;
+            <div class="col-md-9">
+                &lt;!&ndash; Visualization placeholders &ndash;&gt;
+                <div id="polls"></div>
+                <div id="trends"></div>
+            </div>
+
+            &lt;!&ndash; Column 2 select candidate / searchbox&ndash;&gt;
+            <div class="col-md-3">
+                <div class="row">
+
+                    <form action="" method="get">
+                    <div class="col-md-5">
+                        <form action="" method="get">
+                        <input class="invisible" id="Clinton_select" name="checkbox2" type="checkbox" value="Clinton">
+                        <img onclick="checkExtent2(brush.extent())" id="Clinton" class="image_button" src="images/hillary_button.jpg"><br>
+                        <input class="invisible" id="Sanders_select" name="checkbox2" type="checkbox" value="Sanders">
+                        <img onclick="checkExtent2(brush.extent())" id="Sanders" class="image_button" src="images/bernie_button.jpg"><br>
+                        <input class="invisible" id="Trump_select" name="checkbox2" type="checkbox" value="Trump">
+                        <img onclick="checkExtent2(brush.extent())" id="Trump" class="image_button" src="images/trump_button.jpg"><br>
+                        <input class="invisible" id="Cruz_select" name="checkbox2" type="checkbox" value="Cruz">
+                        <img onclick="checkExtent2(brush.extent())" id="Cruz" class="image_button" src="images/cruz_button.jpg"><br>
+                        <input class="invisible" id="Kasich_select" name="checkbox2" type="checkbox" value="Kasich">
+                        <img onclick="checkExtent2(brush.extent())" id="Kasich" class="image_button" src="images/kasich_button.jpg">
+                        </form>
+                    </div>
+                    </form>
+
+                    <div class="col-md-7 search_select">
+                        <form action="" method="get">
+                            <br>
+                            <h5>Hillary Clinton: </h5>
+                            <input id="ch1" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="hillary for america"> "Hillary for America"<br>
+                            <input id="ch2" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="hillary clinton email"> E-mail <br>
+                            <input id="ch3" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="hillary clinton benghazi"> Benghazi <br>
+                            <input id="ch4" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="hillary clinton snl"> SNL <br>
+                            <br>
+                            <h5>Bernie Sanders: </h5>
+                            <input id="ch5" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="feel the bern"> "Feel the Bern" <br>
+                            <input id="ch6" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="bernie sanders socialist"> Socialist <br>
+                            <input id="ch7" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="bernie sanders old"> Old <br>
+                            <input id="ch8" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="bernie sanders bird"> Bird <br>
+                            <br>
+                            <h5>Donald Trump: </h5>
+                            <input id="ch9" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="make america great again"> "Make America Great Again"<br>
+                            <input id="ch10" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="donald trump immigration"> Immigration<br>
+                            <input id="ch11" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="donald trump wife"> Wife<br>
+                            <input id="ch12" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="donald trump wall"> Wall<br>
+                            <br>
+                            <h5>Ted Cruz: </h5>
+                            <input id="ch13" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="ted cruz canada"> Canada<br>
+                            <input id="ch14" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="ted cruz immigration"> Immigration<br>
+                            <input id="ch15" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="ted cruz wife"> Wife<br>
+                            <input id="ch16" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="ted cruz zodiac killer"> Zodiac Killer<br>
+                            <br>
+                            <h5>John Kasich: </h5>
+                            <input id="ch17" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="john kasich ohio"> Ohio<br>
+                            <input id="ch18" name="checkbox" onclick="checkExtent(brush.extent())" type="checkbox" value="john kasich wife"> Wife<br>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <hr>
+
+</div>
+<!-- end body -->
+
+<!-- copyright:)  -->
+<div id="copyright" class="container">
+    <p>&copy; Data, Inc. All rights reserved.</p>
+</div>
+<!-- end copyright -->
+
+
+<script src="js/d3.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3-queue.min.js"></script>
+<script src="js/queue.min.js"></script>
+<script src="js/d3.legend.js"></script>
+<script src="js/topojson.js"></script>
+<script src="js/colorbrewer.js"></script>
+<script src="js/smoothScroll.js"></script>
+<script src="js/d3.tip.v0.6.3.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!--
+
+TEAM NAME:		Data, Inc.
+
+TEAM MEMBERS:	James Curtin
+ 				Anna Papp
+ 				Wilson Qin
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Data, Inc. Final Project</title>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- top banner -->
+<div id="header-wrapper" class="container-fluid" style="text-align:center;">
+
+    <nav class="row navbar navbar-custom" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div id="navbar-brand logo" style="padding-left: 15px;">
+                    <a href="index.html"><img src="images/data_inc.png" height="130px"></a>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="menu" class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li><a href="index.html" title="">Home</a></li>
+                    <li class="active"><a href="county_level.html" title="">Data Explorer</a></li>
+                    <li><a href="polls_trends.html" title="">Opinion Tracker</a></li>
+                    <li><a href="sources.html" title="">Sources</a></li>
+                    <li class="active"><a href="aboutus.html" title="">About Us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div style="clear:both;"></div>
+
+    <!-- Intro Header -->
+    <header class="row" id="banner">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="title">
+                <h2>The 2016 Presidential Elections</h2>
+                <span class="byline">More complex relationships in elections data.</span>
+            </div>
+        </div>
+    </header>
+</div>
+
+<!-- begin body -->
+<div class="container-fluid">
+
+    <!-- ABOUT US -->
+    <div class="row">
+        <h1 class="section_title">About Us</h1>
+        <!-- Column 1 -->
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-3"><img src="images/anna.png" height="150px"></div>
+                <div class="col-md-9"><p class="introduction">A</p><p>nna Papp</p>
+                <p style="padding-left: 25px">is a senior in Pforzheimer House studying Environmental Science &amp; Engineering. She likes art, design, and travelling (but in a non-generic way.) <i class="fa fa-heart-o" aria-hidden="true">s </i> <i class="fa fa-plane" aria-hidden="true"></i></p></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"><img src="images/james.png" height="150px"></div>
+                <div class="col-md-9"><p class="introduction">J</p><p>ames Curtin</p>
+                <p style="padding-left: 20px">is a senior in Pforzheimer House studying Government with a secondary in Computer Science. He spends his time doing photography and watching sunsets.</p></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"><img src="images/wilson.png" height="150px"></div>
+                <div class="col-md-9" style=""><p class="introduction">W</p><p>ilson Qin</p>
+                <p style="padding-left: 35px">is a senior in Kirkland House studying Computer Science. He likes long walks on the beach and piña colatas.</p></div>
+            </div>
+        </div>
+            
+
+        </div>
+        <!-- Column 2 -->
+        <div class="col-md-6">
+        </div>
+    </div>
+
+    <hr>
+
+
+</div>
+
+<!-- copyright, to seem fancy :)  -->
+<div id="copyright" class="container">
+    <p>&copy; Data, Inc. All rights reserved.</p>
+</div>
+
+<!-- all the javascript stuff -->
+<script src="js/d3.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3-queue.min.js"></script>
+<script src="js/queue.min.js"></script>
+<script src="js/topojson.js"></script>
+
+</body>
+</html>
